@@ -1,0 +1,18 @@
+
+# OS generated files
+.DS_Store*
+*.DS_Store
+*/.DS_Store
+
+# python compiled source
+*.pyc
+
+# processed data files
+processed/
+
+# generated data files
+*.json
+
+# raw data file
+raw
+
