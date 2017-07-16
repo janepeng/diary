@@ -5,11 +5,16 @@
    	--wrapper-border-color: #b1caef;
    	--content-background-color: #c1d5f2;
    	--content-box-shadow-color: #a7b8d1;
+   	--background-color: #d0dcef;
 }
 
 body {
-	background-color: #d0dcef;
+	background-color: var(--background-color);
 	color: var(--text-color);
+}
+
+.block {
+	display: block;
 }
 
 .wrapper {
@@ -32,9 +37,26 @@ body {
 }
 
 .sub-content {
-	padding: 10px;
+	position: relative;
+	padding: 15px;
 	background-color: var(--content-background-color);
 	box-shadow: 0 0 30px 0 var(--content-box-shadow-color);
+}
+
+.content-div {
+	z-index: 2;
+	position: relative;
+}
+
+.content-div .block {
+	margin-bottom: 10px;
+}
+
+.sub-content .weather-div {
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
 }
 
 .list-group {

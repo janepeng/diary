@@ -41,6 +41,9 @@ for line in file_content:
 				new_diary[d_date]['content'] = []
 			new_diary[d_date]['content'].append(line.strip())
 
+command = "touch diary.json"
+call(command.split())
+
 # back up data
 with open('diary.json', 'r') as f:
     try:
